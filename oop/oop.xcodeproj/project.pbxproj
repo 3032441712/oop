@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CA1919B1BC25B4500FF4F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1919A1BC25B4500FF4F6B /* AppDelegate.swift */; };
-		3CA1919D1BC25B4500FF4F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1919C1BC25B4500FF4F6B /* ViewController.swift */; };
+		3CA1919D1BC25B4500FF4F6B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1919C1BC25B4500FF4F6B /* HomeController.swift */; };
 		3CA191A01BC25B4500FF4F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1919E1BC25B4500FF4F6B /* Main.storyboard */; };
 		3CA191A21BC25B4500FF4F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA191A11BC25B4500FF4F6B /* Assets.xcassets */; };
 		3CA191A51BC25B4500FF4F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA191A31BC25B4500FF4F6B /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		3CA191971BC25B4500FF4F6B /* oop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1919A1BC25B4500FF4F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CA1919C1BC25B4500FF4F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CA1919C1BC25B4500FF4F6B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		3CA1919F1BC25B4500FF4F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CA191A11BC25B4500FF4F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA191A41BC25B4500FF4F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +97,11 @@
 		3CA191991BC25B4500FF4F6B /* oop */ = {
 			isa = PBXGroup;
 			children = (
+				3CA191CB1BC25C9300FF4F6B /* comm */,
+				3CA191CA1BC25C8800FF4F6B /* service */,
+				3CA191C91BC25C8200FF4F6B /* model */,
+				3CA191C81BC25C6B00FF4F6B /* controller */,
 				3CA1919A1BC25B4500FF4F6B /* AppDelegate.swift */,
-				3CA1919C1BC25B4500FF4F6B /* ViewController.swift */,
 				3CA1919E1BC25B4500FF4F6B /* Main.storyboard */,
 				3CA191A11BC25B4500FF4F6B /* Assets.xcassets */,
 				3CA191A31BC25B4500FF4F6B /* LaunchScreen.storyboard */,
@@ -123,6 +126,43 @@
 				3CA191BC1BC25B4500FF4F6B /* Info.plist */,
 			);
 			path = oopUITests;
+			sourceTree = "<group>";
+		};
+		3CA191C81BC25C6B00FF4F6B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CA191CC1BC25CA100FF4F6B /* home */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		3CA191C91BC25C8200FF4F6B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		3CA191CA1BC25C8800FF4F6B /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		3CA191CB1BC25C9300FF4F6B /* comm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = comm;
+			sourceTree = "<group>";
+		};
+		3CA191CC1BC25CA100FF4F6B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1919C1BC25B4500FF4F6B /* HomeController.swift */,
+			);
+			name = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA1919D1BC25B4500FF4F6B /* ViewController.swift in Sources */,
+				3CA1919D1BC25B4500FF4F6B /* HomeController.swift in Sources */,
 				3CA1919B1BC25B4500FF4F6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -387,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -400,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = oop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragon.oop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = oop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragon.oop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
