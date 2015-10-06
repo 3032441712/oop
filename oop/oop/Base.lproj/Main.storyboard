@@ -5,6 +5,25 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--center-->
+        <scene sceneID="hhd-ZK-dac">
+            <objects>
+                <viewController title="center" id="t2N-mm-liw" customClass="CenterController" customModule="oop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v8f-ky-mIM"/>
+                        <viewControllerLayoutGuide type="bottom" id="r7A-zm-UEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FHH-Fy-OKE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="会员" id="7Fd-f1-P4z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfJ-oH-z9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6058" y="-2269"/>
+        </scene>
         <!--friend-->
         <scene sceneID="XLJ-Zp-QWp">
             <objects>
@@ -22,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDK-0N-cQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6106" y="-2235"/>
+            <point key="canvasLocation" x="-6058" y="-2971"/>
         </scene>
         <!--bbs-->
         <scene sceneID="QB8-tX-kVq">
@@ -41,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQB-Z5-E5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6106" y="-2893"/>
+            <point key="canvasLocation" x="-6058" y="-3665"/>
         </scene>
         <!--home-->
         <scene sceneID="u83-e4-MPw">
@@ -60,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjZ-Ma-4TD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6106" y="-3552"/>
+            <point key="canvasLocation" x="-6058" y="-4436"/>
         </scene>
         <!--main-->
         <scene sceneID="YTa-m3-ZFq">
@@ -75,11 +94,12 @@
                         <segue destination="yYD-Rq-l3u" kind="relationship" relationship="viewControllers" id="Y1h-BR-o1j"/>
                         <segue destination="s1R-dt-Z6V" kind="relationship" relationship="viewControllers" id="pSR-yB-f2I"/>
                         <segue destination="kjh-RT-GJt" kind="relationship" relationship="viewControllers" id="hXS-Z0-rWh"/>
+                        <segue destination="t2N-mm-liw" kind="relationship" relationship="viewControllers" id="62k-9R-hCe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-aS-ix6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7448" y="-2711"/>
+            <point key="canvasLocation" x="-8504" y="-2335"/>
         </scene>
     </scenes>
 </document>
