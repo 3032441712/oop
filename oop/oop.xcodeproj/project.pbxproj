@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5E13C81BC2A72F00E3BD49 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E13C71BC2A72F00E3BD49 /* FriendController.swift */; settings = {ASSET_TAGS = (); }; };
+		3C8CEFF11BC34E4100B8323C /* BBSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8CEFF01BC34E4100B8323C /* BBSController.swift */; settings = {ASSET_TAGS = (); }; };
+		3C8E61371BC296D30051CBCA /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E61361BC296D30051CBCA /* MainController.swift */; settings = {ASSET_TAGS = (); }; };
 		3CA1919B1BC25B4500FF4F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1919A1BC25B4500FF4F6B /* AppDelegate.swift */; };
 		3CA1919D1BC25B4500FF4F6B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1919C1BC25B4500FF4F6B /* HomeController.swift */; };
 		3CA191A01BC25B4500FF4F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1919E1BC25B4500FF4F6B /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C5E13C71BC2A72F00E3BD49 /* FriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		3C8CEFF01BC34E4100B8323C /* BBSController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSController.swift; sourceTree = "<group>"; };
+		3C8E61361BC296D30051CBCA /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		3CA191971BC25B4500FF4F6B /* oop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1919A1BC25B4500FF4F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA1919C1BC25B4500FF4F6B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -131,7 +137,11 @@
 		3CA191C81BC25C6B00FF4F6B /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				3CA191CF1BC26CBE00FF4F6B /* friend */,
+				3CA191CE1BC26C0F00FF4F6B /* center */,
+				3CA191CD1BC26BF600FF4F6B /* bbs */,
 				3CA191CC1BC25CA100FF4F6B /* home */,
+				3C8E61361BC296D30051CBCA /* MainController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -163,6 +173,29 @@
 				3CA1919C1BC25B4500FF4F6B /* HomeController.swift */,
 			);
 			name = home;
+			sourceTree = "<group>";
+		};
+		3CA191CD1BC26BF600FF4F6B /* bbs */ = {
+			isa = PBXGroup;
+			children = (
+				3C8CEFF01BC34E4100B8323C /* BBSController.swift */,
+			);
+			name = bbs;
+			sourceTree = "<group>";
+		};
+		3CA191CE1BC26C0F00FF4F6B /* center */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = center;
+			sourceTree = "<group>";
+		};
+		3CA191CF1BC26CBE00FF4F6B /* friend */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E13C71BC2A72F00E3BD49 /* FriendController.swift */,
+			);
+			name = friend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8CEFF11BC34E4100B8323C /* BBSController.swift in Sources */,
 				3CA1919D1BC25B4500FF4F6B /* HomeController.swift in Sources */,
+				3C5E13C81BC2A72F00E3BD49 /* FriendController.swift in Sources */,
+				3C8E61371BC296D30051CBCA /* MainController.swift in Sources */,
 				3CA1919B1BC25B4500FF4F6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +563,7 @@
 				3CA191C11BC25B4500FF4F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA191C21BC25B4500FF4F6B /* Build configuration list for PBXNativeTarget "oopTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +572,7 @@
 				3CA191C41BC25B4500FF4F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA191C51BC25B4500FF4F6B /* Build configuration list for PBXNativeTarget "oopUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +581,7 @@
 				3CA191C71BC25B4500FF4F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
