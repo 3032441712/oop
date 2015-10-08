@@ -9,25 +9,33 @@
 import UIKit
 
 class BBSController: UIViewController {
+    
+    // Mark property
+    @IBOutlet weak var bbsInfo: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad();
-        
-        let bbsNavigationController = UINavigationController();
-        let bbsViewController = UIViewController();
-        let lable = UILabel(frame: CGRectMake(20, 80, 80, 80));
-        
-        lable.text = "社区";
-        bbsViewController.title = "社区";
-        bbsViewController.view.addSubview(lable);
-        bbsNavigationController.addChildViewController(bbsViewController);
-        
-        self.view.addSubview(bbsNavigationController.view);
-
-        
         print("BBSController");
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning();
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+        print("bbsController viewWill");
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated);
+        print("bbsController viewwillDis");
+        self.hidesBottomBarWhenPushed = false;
+    }
+    
+    // Mark Action
+    @IBAction func bbsInfoAct(sender: AnyObject) {
+        self.bbsInfo.setTitle("社区页面", forState: UIControlState.Normal);
+        self.hidesBottomBarWhenPushed = true;
     }
 }
