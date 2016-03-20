@@ -12,6 +12,7 @@ class CenterController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        self.view.addSubview(FriendModel().view)
         print("centen");
     }
     
