@@ -28,7 +28,7 @@
         <!--friend-->
         <scene sceneID="XLJ-Zp-QWp">
             <objects>
-                <viewController title="friend" id="kjh-RT-GJt" customClass="FriendController" customModule="oop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="friend" id="kjh-RT-GJt" customClass="FriendTableController" customModule="oop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zQp-Yg-ZhK"/>
                         <viewControllerLayoutGuide type="bottom" id="4TR-rx-9ZQ"/>
